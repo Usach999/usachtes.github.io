@@ -1,0 +1,595 @@
+/*font-family: 'Cinzel', serif;
+
+
+https://gameroff.net/wp-content/uploads/2016/10/theelderscrollsskyrimspecialedition-cover-1024x322.jpg
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Kurale|Suez+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+
+/*
+		Поменяю скроллбар. Почему бы и нет
+*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+  background: #f2f2f2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-image: url(https://i.pinimg.com/originals/5b/34/6b/5b346bf4c8671dac962cc1fbe88c0a36.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  font-family: Trebuchet MS, Helvetica;
+  color: white;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
+}
+
+header #logo {
+  color: #fff;
+  cursor: pointer;
+}
+
+header #logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#about > a {
+	color: #fff; 
+	text-decoration: none;
+}
+
+#about > a:hover {
+	font-size: 1.1em;
+	color: white;
+	text-decoration: underline;
+}
+
+#about > a:not(:last-child) {
+	margin-right: 7%;
+}
+
+/* Стили для шапки */
+
+.fixed {
+  z-index: 5000;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+  color: #343434;
+}
+
+.fixed #about a {
+	color: #343434;
+	text-decoration: none;
+}
+.fixed #about a:hover {
+	font-size: 1.1em;
+	color: black;
+	text-decoration: underline;
+}
+
+/* Главный блок на сайте */
+
+#top {
+  width: 100%;
+  height: 105vh;
+  background-image: url(https://games.mail.ru/pre_1280x720_resize/hotbox/content_files/article/4394/lead_pic/e7afb.jpeg?quality=85);
+  background-blend-mode: multiply;
+  background-color: #4d5771;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+#top h1		{
+	padding-top: 20%;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+@media	(min-width: 1301px) {
+
+	#top {
+		font-size: 3em;
+	}
+}
+
+@media	(max-width: 1300px) and (min-width: 751px) {
+
+	#top {
+		font-size: 2em;
+	}
+}
+@media	(max-width: 750px) and (min-width: 581px) {
+
+	#top {
+		font-size: 1.5em;
+		padding-top: 30%;
+	}
+}
+@media	(max-width: 581px) {
+
+	#top {
+		font-size: 1em;
+		padding-top: 50%;
+	}
+}
+
+
+/*
+		Описание TES
+*/
+
+#hr_main	{
+	border: 1px solid black;
+}
+
+#main {
+	margin-top: 2%;
+	padding: 100px 10% 100px 30%;
+	width: 60%;
+	height: 70vh;
+	float: left;
+	background-image: url(https://i.pinimg.com/originals/fa/76/5c/fa765c13d97b0deca8204e260b42090e.jpg);
+  	/*background-blend-mode: multiply;*/
+ 	background-color: black;
+ 	background-repeat: no-repeat;
+ 	background-size: contain;
+	color: white;
+	font-size: 1.5em;
+}
+
+.intro	{
+	font-size: 1.5em;
+	font-family: 'Goudy Bookletter 1911', serif;
+	text-align: center;
+}
+
+.text 	{
+	margin-top: 40px;
+	line-height: 1.1;
+	text-align: center;
+}
+
+#main hr 	{
+	width: 10%;
+	margin: 0 45% 0 45%;
+}
+
+
+/*
+		Блок Дополнений
+*/
+
+
+#hr_desc	{
+	border: 1vh solid black;
+}
+
+#desc	{
+	height: 60em;
+	align-items: center;
+	background-image: url(https://images.alphacoders.com/203/203543.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#desc h4	{
+	margin: 5%;
+	font-size: 3em;
+	font-family: 'Kurale', serif;
+	text-align: center;
+}
+
+#desc div	{
+	text-align:center;
+	width: 100%;
+	height: 30%;
+}
+
+#dlcbutton	{
+	margin-top: -5em;
+	margin-bottom: 20em;
+	display: flex;
+	align-items: center;
+}
+
+
+#dlc1	input {
+	border: 1px;
+	padding: 5%;
+	width: 50%;
+	height: 50vh;
+	background-image: url(https://vignette.wikia.nocookie.net/elderscrolls/images/3/39/Dragonborn_Cover.png/revision/latest?cb=20160815161908);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#dlc1 input:hover	{
+	width: 60%;
+	height: 55vh;
+	box-shadow: 0 0 10px #053178, 0 0 20px #053178, 0 0 40px #053178;
+	cursor: pointer;
+}
+
+#dlc2	input {
+	border: 1px;	
+	padding: 5%;
+	width: 50%;
+	height: 50vh;
+	background-image: url(https://vignette.wikia.nocookie.net/elderscrolls/images/e/ed/Dawnguard_boxart.png/revision/latest?cb=20160815161732);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+#dlc2 input:hover	{
+	width: 60%;
+	height: 55vh;
+	box-shadow: 0 0 10px #fab752, 0 0 20px #fab752, 0 0 40px #fab752;
+	cursor: pointer;
+}
+
+#dlc3	input {
+	border: 1px;
+	padding: 5%;
+	width: 50%;
+	height: 50vh;
+	background-image: url(https://vignette.wikia.nocookie.net/elderscrolls/images/9/95/Hearthfireboxart.png/revision/latest?cb=20160812050000);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#dlc3 input:hover	{
+	width: 60%;
+	height: 55vh;
+	box-shadow: 0 0 10px #543c00, 0 0 20px #543c00, 0 0 40px #543c00;
+	cursor: pointer;
+}
+
+#dlc 	{
+	width: 100%;
+	color:  white;
+	text-align: center;
+}
+
+
+#hr_dragonborn	{
+	border: 1.5em solid black;
+}
+
+#dragonborn {
+	background: black;
+	width: 100%;
+	height: 100vh;
+	float: left;
+	background-image: url(https://giantbomb1.cbsistatic.com/uploads/scale_medium/17/174619/2417699-miraak.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#dragonborn .intro	{
+	padding: 10vh 5vw 5vh 50vw;
+	font-size: 3em;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+#dragonborn .text 	{
+	padding: 0 5vw 10vh 50vw;
+	margin-top: 40px;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+#hr_dawnguard	{
+	border: 1.5em solid black;
+}
+
+#dawnguard {
+	width: 100%;
+	height: 100vh;
+	background-image: url(http://images.ctfassets.net/rporu91m20dc/2pKBE5jOOUEkg60gUcqsgE/b7ee34a0bd4e38fe19b10880db8cd91e/skyrim--blocks--dawnguard-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+#dawnguard .intro 	{
+	padding: 10vh 50vw 5vh 5vw;
+	font-size: 3em;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+#dawnguard .text 	{
+	padding: 10vh 50vw 5vh 5vw;
+	margin-top: 40px;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+
+#hr_hearthfire	{
+	border: 1.5em solid black;
+}
+
+#hearthfire {
+
+	width: 100%;
+	height: 100vh;
+	background-image: url(http://images.ctfassets.net/rporu91m20dc/4ADEHIAoYwcqqcQmkQOKoy/ff81a87bd175c976978a8443681eb010/skyrim--blocks--hearthfire-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#hearthfire .intro	{
+	padding: 10vh 5vw 5vh 50vw;
+	font-size: 3em;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+#hearthfire .text 	{
+	padding: 0 5vw 10vh 50vw;
+	margin-top: 40px;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5;
+}
+
+
+
+/*
+		Блок Трейлеров
+*/
+
+#hr_trailer	{
+	border: 3vh solid black;
+}
+
+#video	{
+	background-image: url(https://www.elsetge.cat/imagepost/b/28/284874_skyrim-wallpaper-android.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: calc(100%-2px);
+	height: 100vh;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#video h5	{
+	font-size: 1.5em;
+	font-family: 'Goudy Bookletter 1911', serif;
+	color: black;
+}
+
+#video h1{
+	margin-top: 5vh;
+	font-size: 2em;
+	font-family: 'Kurale', serif;
+	color: black;
+}
+
+#video	hr 	{
+	margin: 4vh 45% 0 45%;
+	background: black;
+	width: 10%;
+	height: 1px;
+	border: none;
+}
+
+#sr_trailer	{
+	margin: 5vh 25% 5vh 25%;
+	width: 50%;
+	height: 60%;
+	float: left;
+	border: 5px double #6b6b6b;
+}
+
+#sr_trailer:hover	{
+	margin: 2vh 24% 10vh 24%;
+	width: 52%;
+	height: 62%;
+	box-shadow: 0 0 10px #6b6b6b, 0 0 20px #6b6b6b, 0 0 40px #6b6b6b;
+}
+
+/*
+		Скриншоты
+*/
+
+#hr_photo	{
+	background: black;
+	border: 1px solid black;
+}
+
+#screenshots	{
+	border: 1px solid black;
+	background-image: url(https://3dnews.ru/assets/external/illustrations/2020/01/17/1001676/01.jpg);
+	background-blend-mode: multiply;
+	background-color: #595959;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#photo	{
+	margin: 4% 25% 5% 25%;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+#h2_photo	{
+	margin: 5% 0 2% 0;
+	color: white;
+	font-size: 2em;
+	font-family: 'Kurale', serif;
+}
+
+img {
+  vertical-align: middle;
+}
+
+img:hover	{
+	box-shadow: 0 0 10px #ccc, 0 0 20px #ccc, 0 0 40px #ccc;
+}
+
+/* Позиционированние главной картинки (нужно для стрелок) */
+.container {
+  position: relative;
+}
+
+/* Скрыть картинки по умолчанию*/
+.mySlides {
+  display: none;
+}
+
+/* Стиль курсора при наведении на картинки thumbnail*/
+.cursor {
+  cursor: pointer;
+}
+
+/* Кнопки пред./след. */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Позиция стрелок */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении добавление черного заднего фона с прозрачностью */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* цифры стр. (1/12) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Контейнер для текста картинок */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 6 столбцов */
+.column {
+	margin: 5px 0 0 0;
+  float: left;
+  width: 16.66%;
+}
+
+/* Прозрачность для картинок thumbnail */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

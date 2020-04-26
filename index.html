@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>The Elder Scrolls</title>
+	<link rel="shortcut icon" href="img/favicon1.png" type="image/png">
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+<!--
+
+
+
+ 			ДРАТУТЕ, НЕ ЗНАЮ НАФИГ ТЫ ЗАШЕЛ В МЕНЯ, НО ДОБРО ПОЖАЛОВАТЬ
+
+
+
+  -->
+
+
+
+<!-- 
+	
+		Главная фиксированная панель
+
+-->
+
+
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>TES: Skyrim</span>
+    </div>
+    <div id="about">
+      <a href="#" title="Описание" onclick="slowScroll('#hr_main')">Описание</a>
+      <a href="#" onclick="slowScroll('#hr_desc')" title="Дополнения">Дополнения</a>
+      <a href="#" onclick="slowScroll('#hr_trailer')" title="Трейлер">Трейлер</a>
+      <a href="#" onclick="slowScroll('#hr_photo')" title="Скриншоты">Скриншоты</a>
+    </div>
+  </header>
+
+
+<!-- 
+	Главный / верхний блок
+-->
+
+
+<div id="top">
+  	<h1>The Elder Scrolls V: Skyrim</h1>
+</div>
+
+
+<!-- 
+	Описание Скурима 
+-->
+
+
+<hr id="hr_main">
+
+	<div id="main">
+		<div class="intro">
+			<h2>The Elder Scrolls: Skyrim</h2>
+		</div>
+				<hr>
+		<div class="text">
+			
+			
+			<span>The Elder Scrolls V: Skyrim - это приключенческая ролевая игра, пятая часть в серии The Elder Scrolls, с огромным открытым миром, который с самого начала полностью доступен для исследования. Игрокам предстоит выступить в роли Довакина, Драконорожденного, который появляется в провинции Скайрим аккурат во время возвращения легендарных драконов, которые, по преданию, собираются разрушить мир. Довакину предстоит преодолеть множество трудностей на пути к своей цели - остановить драконьего повелителя Алдуина, который готовится обрушить свою ярость на весь мир. <br> 
+
+			Игроки вольны выбирать, проходить им сюжетную линию, заняться побочными заданиями или же просто бродить по миру. В Skyrim нет четкого понятия "класс персонажа" - протагониста можно развивать, как понравится игроку, создавая всевозможные комбинации из стандартных "ролевых" классов. </span>
+			
+			
+		</div>
+	</div>
+
+<hr id="hr_desc">
+	
+	<div id="desc" >
+
+<br>
+<br>
+
+
+<!-- 
+	Блок Дополнений 
+-->
+
+
+			<h4>Для игры было выпущено 3 дополнения:</h4>
+
+
+
+<!-- 
+	Кнопки для быстрого перемещения по дополнениям 
+-->
+
+
+
+			<div id="dlcbutton">
+
+				<!-- 
+				Dragonborn button
+				-->
+					<div id="dlc1"> 
+						<form>
+							<input title="Переход к Dragonborn" type="button"  onclick="slowScroll('#hr_dragonborn')">
+						</form>
+					</div>
+
+				<!-- 
+				Dawnguard button
+				-->
+					<div id="dlc2"> 
+					 	<form>
+							<input title="Переход к Dawnguard" type="button" onclick="slowScroll('#hr_dawnguard')">
+						</form>
+					</div>
+
+				<!-- 
+				Hearthfire button
+				-->
+					<div id="dlc3"> 
+					 	<form>
+							<input title="Переход к Hearthfire" type="button" onclick="slowScroll('#hr_hearthfire')">
+						</form>
+					</div>
+
+			</div>
+
+	</div>
+
+
+<!-- 
+	Описание Дополнений 
+-->
+
+	<div id="dlc">
+
+		<hr id="hr_dragonborn">
+		<div id="dragonborn">
+			<div class="intro">
+				<h3>Dragonborn</h3>
+			</div>
+
+			<div class="text">
+				В этом официальном дополнении к игре The Elder Scrolls V: Skyrim вы покинете берега Морровинда и отправитесь на остров Солстхейм. В путешествии по пустошам и ледниковым долинам вас ждут новые города, подземелья и задания. Ваш герой станет еще сильнее: теперь Крики помогут укрощать врагов и даже приручать драконов. Но ваша судьба и судьба всего Солстхейма окажется на волоске, когда вы встретите вашего злейшего врага - первого Драконорожденного.
+			</div>
+		</div>
+
+	<hr id="hr_dawnguard">
+		<div id="dawnguard">
+			<div class="intro">
+				<h3>Dawnguard</h3>
+			</div>
+
+			<div class="text">
+				Лорд-вампир Харкон вернулся к власти. Используя Древние Свитки, он намерен сделать немыслимое - погасить само солнце. Присоединитесь ли вы к древнему ордену Стерегущих Рассвет, чтобы остановить его? Или сами станете Лордом-вампиром? В Dawnguard этот выбор остается за вами.
+			</div>
+		</div>
+
+	<hr id="hr_hearthfire">
+		<div id="hearthfire">
+			<div class="intro">
+				<h3>Hearthfire</h3>
+			</div>
+
+			<div class="text">
+				Это официальное дополнение для игры The Elder Scrolls V: Skyrim позволит купить участок земли и построить собственный дом. Начните с простой хижины и превратите ее в огромный особняк с оружейной, алхимической лабораторией, конюшней, садом и другими строениями. Новые инструменты - чертежный стол и верстак - помогут изготавливать мебель из камня, глины и дерева. Вы можете даже усыновить ребенка, и пустое жилище превратится в настоящий уютный дом.
+			</div>
+		</div>
+
+	</div>
+
+<hr id="hr_trailer">
+
+
+<!-- 
+	Блок с Трейлером
+-->
+
+
+<div id="video">
+
+	<h1>Трейлер</h1>
+	<h5>TES V: Skyrim</h5>
+<hr>
+		<iframe id="sr_trailer" src="https://www.youtube.com/embed/JSRtYpNRoN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>	
+	</iframe>
+
+</div>
+
+
+<!-- 
+		Блок со Скринами
+ -->
+
+<hr id="hr_photo" >
+
+<div id="screenshots">
+	<div id="photo">
+		
+
+		<h2 id="h2_photo" style="text-align:center">Скриншоты</h2>
+
+		<div class="container">
+	  		<div class="mySlides">
+	    		<div class="numbertext">1 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/fc57ee93e8600617cfc986e7feb80368-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">2 / 12</div>
+	    			<img src="https://vignette.wikia.nocookie.net/elderscrolls/images/8/80/Werewolf_-_Full_Body_Shot_%28Skyrim%29.png/revision/latest?cb=20191006003051" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">3 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/6532876947c70a09a02c8b087cd2a0c0-full.jpg" style="width:100%">
+	  			</div>
+	    
+			<div class="mySlides">
+			    <div class="numbertext">4 / 12</div>
+			    	<img src="https://i.pinimg.com/originals/6e/3c/c6/6e3cc622099c02af7b6d3c32937c8daf.jpg" style="width:100%">
+			    </div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">5 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/7fb3073528cf36a3ce53e4eaf0d57628-full.jpg" style="width:100%">
+	  			</div>
+	    
+	  		<div class="mySlides">
+	    		<div class="numbertext">6 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/20c1906d65c155bcad96eb8527c950a4-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">7 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/378aeefb0d52f05cf5ead681614b24bb-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">8 / 12</div>
+	    			<img src="https://vignette.wikia.nocookie.net/elderscrolls/images/c/cc/Siege_of_Whiterun.png/revision/latest?cb=20120124112007" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">9 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/ec13b7ea2d4c0f2319d06f51a4ef9de7-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">10 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/2b97534e89c60a5a545a152c8e26b2e0-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">11 / 12</div>
+	    			<img src="https://cdn1.savepice.ru/uploads/2020/4/26/175b69fd569557f54821362de75034fb-full.jpg" style="width:100%">
+	  			</div>
+
+	  		<div class="mySlides">
+	    		<div class="numbertext">12 / 12</div>
+	    			<img src="https://gagadget.com/media/cache/d2/85/d28522cb0adaed1b777f65bf7975bd7a.jpg" style="width:100%">
+	  			</div>
+	    
+	  		<a class="prev" onclick="plusSlides(-1)">❮</a>
+	  		<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+	<!--   		
+		
+		Блок с текстом под главной картинкой (можно открыть если понадобиться)
+
+
+				<div class="caption-container">
+	    			<p id="caption"></p>
+	  			</div> 
+
+
+	-->
+
+	  		<div class="row">
+	    		<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/fc57ee93e8600617cfc986e7feb80368-full.jpg" style="width:100%" onclick="currentSlide(1)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://vignette.wikia.nocookie.net/elderscrolls/images/8/80/Werewolf_-_Full_Body_Shot_%28Skyrim%29.png/revision/latest?cb=20191006003051" style="width:100%" onclick="currentSlide(2)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/6532876947c70a09a02c8b087cd2a0c0-full.jpg" style="width:100%" onclick="currentSlide(3)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://i.pinimg.com/originals/6e/3c/c6/6e3cc622099c02af7b6d3c32937c8daf.jpg" style="width:100%" onclick="currentSlide(4)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/7fb3073528cf36a3ce53e4eaf0d57628-full.jpg" style="width:100%" onclick="currentSlide(5)" >
+		    	</div>    
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/20c1906d65c155bcad96eb8527c950a4-full.jpg" style="width:100%" onclick="currentSlide(6)" >
+		    	</div>
+		        <div class="column">
+		      		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/378aeefb0d52f05cf5ead681614b24bb-full.jpg" style="width:100%" onclick="currentSlide(7)" >
+		    	</div>
+		    	<div class="column">
+		      		<img class="demo cursor" src="https://vignette.wikia.nocookie.net/elderscrolls/images/c/cc/Siege_of_Whiterun.png/revision/latest?cb=20120124112007" style="width:100%" onclick="currentSlide(8)" >
+		    	</div>
+		    	<div class="column">
+		      		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/ec13b7ea2d4c0f2319d06f51a4ef9de7-full.jpg" style="width:100%" onclick="currentSlide(9)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/2b97534e89c60a5a545a152c8e26b2e0-full.jpg" style="width:100%" onclick="currentSlide(10)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://cdn1.savepice.ru/uploads/2020/4/26/175b69fd569557f54821362de75034fb-full.jpg" style="width:100%" onclick="currentSlide(11)" >
+		    	</div>
+		    	<div class="column">
+		    		<img class="demo cursor" src="https://gagadget.com/media/cache/d2/85/d28522cb0adaed1b777f65bf7975bd7a.jpg" style="width:100%" onclick="currentSlide(12)" >
+		    	</div>
+	  		</div>
+		</div>
+
+		<!-- Время JQuery -->
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+		</script>
+
+	</div>
+</div>
+	<!-- 
+
+		Здеся подключается JQuery, хотя лучше бы в хеде подключил 
+
+		ну и еще немного JQuery кода для быстрого перехода по странице
+
+	-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		function slowScroll(id) {
+			$('html, body').animate({
+				scrollTop: $(id).offset().top
+			}, 500);
+		}
+
+		$(document).on("scroll", function () {
+			if ($(window).scrollTop() === 0)
+				$("header").removeClass("fixed");
+			else
+				$("header").attr("class","fixed");
+		});
+	</script>
+
+</body>
+</html>
